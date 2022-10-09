@@ -43,3 +43,13 @@
           }
       }
     }
+
+    @media (max-width: 767px) {
+      .about__container {
+        display: none;
+      }
+
+      .about {
+        padding-bottom: 0px;
+      }
+    }

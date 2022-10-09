@@ -1,7 +1,7 @@
   .navigation {
-    width: 254px;
+    min-width: 254px;
     margin-left: 93px;
-    margin-right: 371px;
+    border: 2px solid red;
 
     &__menu {
       list-style: none;
@@ -45,11 +45,11 @@
   .contact {
 
     display: flex;
-    align-items: center;
+    border: 2px solid red;
 
 
     &__item {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       color: $--bright-text-color;
       font-weight: 500;
@@ -75,5 +75,29 @@
         fill: currentColor;
         margin-right: 10px;
       }    
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .navigation {
+      margin-right: 360px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .contact {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .contact__item {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navigation__menu {
+      display: none;
     }
   }
