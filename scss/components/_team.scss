@@ -1,0 +1,75 @@
+.team {
+    background: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__container {
+      @extend .container; 
+    }
+
+    &__heading {
+      @extend .heading; 
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-between;
+      }
+    
+    &__item {
+        display: block;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+      }
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1, 1875;
+        letter-spacing: 0.03em;
+        color: $--dark-text-color;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+    &__description {
+        font-size: 16px;
+        line-height: 1, 1875;
+        letter-spacing: 0.03em;
+        color: $--bright-text-color;
+        margin-bottom: 16px;
+      }
+
+    &__socials {
+        display: flex;
+        width: 206px;
+        margin: auto;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        a {
+            display: flex;
+            border: none;
+            border-radius: 50%;
+            fill: $--icons-primary-color;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+              background-color: $--blue-text-color;
+              fill: $--icons-secondary-color;
+            }
+          }
+
+      }
+      
+    &__icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }   
+  }

@@ -1,0 +1,55 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__container {
+        @extend .container; 
+    }
+
+    &__heading {
+        @extend .heading; 
+    }
+    
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-between;
+
+        a {
+            display: flex;
+            width: 170px;
+            height: 92px;
+            border: 1px solid #afb1b8;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                border-color: $--blue-text-color;
+              }
+
+            &:focus {
+                border: 1px solid $--blue-text-color;
+                outline: none;
+                
+                .clients__icon {
+                    fill: $--blue-text-color;
+                }
+            }
+        }
+    }
+
+    &__item:hover {
+        .clients__icon {
+            fill: $--blue-text-color;
+        }
+    }
+    
+    &__icon {
+        fill: $--icons-primary-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

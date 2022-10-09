@@ -1,0 +1,31 @@
+@import "./utils/variables";
+
+// GLOBAL COMPONENTS
+@import "./components/body";
+@import "./components/logo";
+@import "./components/container";
+
+// HEADER COMPONENTS
+@import "./components/header";
+@import "./components/navigation";
+
+// MAIN - STUDIO COMPONENTS
+@import "./components/slider";
+@import "./components/article";
+@import "./components/about";
+@import "./components/team";
+@import "./components/clients";
+
+// MAIN - PORTFOLIO COMPONENTS
+@import "./components/filter";
+@import "./components/portfolio";
+@import "./components/card";
+
+// FOOTER COMPONENTS
+@import "./components/footer";
+@import "./components/newsletter";
+
+// MODAL WINDOW COMPONENTS
+
+@import "./components/modal";
+@import "./components/form";

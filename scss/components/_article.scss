@@ -1,0 +1,43 @@
+.article {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &__container {
+      @extend .container;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+      }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1, 142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $--bright-text-color;
+      }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+      }
+  }

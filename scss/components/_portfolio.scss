@@ -1,0 +1,17 @@
+.portfolio {
+    background-color: $--main-background-color;
+    margin-bottom: 94px;
+
+    &__container {
+        @extend .container;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+      }
+  }
