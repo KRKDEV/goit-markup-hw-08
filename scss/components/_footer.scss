@@ -6,11 +6,10 @@
 
     &__container {
       @extend .container;
-      display: flex;
-      gap: 70px;
     }
 
     &__logo {
+        display: block;
         color: #ffffff;
       }
 
@@ -76,6 +75,64 @@
             }
           }
       }
+  }
+
+  @media (max-width: 480px) {
+    .footer {
+      &__container {
+        display: flex;
+        gap: 70px;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__title {
+        text-align: center;
+      }
+      &__menu {
+        text-align: center;
+      }
+      &__logo {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1199px) {
+    .footer {
+
+      &__container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__tablet {
+        display:flex;
+        justify-content: center;
+        gap: 144px;
+      }
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    .footer {
+      &__container {
+        display: flex;
+        gap: 70px;
+      }
+
+      &__tablet {
+        display: flex;
+        gap: 70px;
+      }
+    }
+
   }
 
   
