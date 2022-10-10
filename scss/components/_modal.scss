@@ -20,14 +20,14 @@
   }  
 
 .modal {
+  &__container {
     position: fixed;
-    width: 528px;
     height: 581px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    margin-top: 226px;
+  }
 
     &__close-button {
         position: absolute;
@@ -55,3 +55,28 @@
         margin-top: 40px;
       }
   } 
+
+  @media  (min-width: 480px) {
+    .modal {
+      &__container {
+        width: 450px;
+        margin-top: 93px;
+      }
+      &__title {
+        width:370px;
+        margin:40px 40px 0px 40px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .modal {
+      &__container {
+        width: 528px;
+        margin-top: 226px;
+      }
+      
+      &__title {
+        width:448px;
+      }
+    }
+  }
