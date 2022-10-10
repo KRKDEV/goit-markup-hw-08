@@ -49,23 +49,26 @@ body {
           align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 2px solid green;
+  height: 30px;
 }
 .header__logo {
   color: black;
 }
-
-@media (max-width: 1200px) {
-  .header__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.header__desktop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .navigation {
-  min-width: 254px;
   margin-left: 93px;
-  border: 2px solid red;
 }
 .navigation__menu {
   list-style: none;
@@ -110,7 +113,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
 }
 .contact__item {
   display: -webkit-box;
@@ -147,20 +149,29 @@ body {
 
 @media (min-width: 1200px) {
   .navigation {
-    margin-right: 360px;
+    min-width: 254px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    width: 282px;
+  }
   .contact {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
   .contact__item {
     display: none;
   }
-}
-@media (max-width: 767px) {
   .navigation__menu {
     display: none;
   }
@@ -179,10 +190,19 @@ body {
 .slider__container {
   padding-top: 200px;
   padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .slider__header h1 {
   font-weight: 900;
-  font-size: 44px;
   line-height: 1, 363;
   text-align: center;
   letter-spacing: 0.06em;
@@ -217,6 +237,19 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 1199px) {
+  .slider__header {
+    max-width: 365px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 44px;
+  }
+}
 .article {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -719,6 +752,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 60px;
   }
   .footer__title {
     text-align: center;
@@ -743,6 +777,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 60px;
   }
   .footer__tablet {
     display: -webkit-box;
@@ -864,7 +899,7 @@ body {
             align-items: center;
   }
   .newsletter__input {
-    max-width: 460px;
+    max-width: 319px;
   }
   .newsletter__button {
     margin-top: 20px;
