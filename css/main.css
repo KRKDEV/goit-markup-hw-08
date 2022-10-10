@@ -294,7 +294,7 @@ body {
     gap: 30px;
   }
 }
-@media (min-width: 460px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .article__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,9 +308,12 @@ body {
     margin: auto;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 479px) {
   .article {
     padding-bottom: 60px;
+  }
+  .article__title {
+    text-align: center;
   }
   .article__item {
     padding: 0px 15px 0px 15px;
